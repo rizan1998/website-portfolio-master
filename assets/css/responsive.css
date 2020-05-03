@@ -1,0 +1,231 @@
+@media only screen and (max-width: 340px) {
+
+    /* global class */
+    .site-main .title-section {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10%;
+    }
+
+    .site-main .img-title {
+        margin-top: -12%;
+        size: 50px;
+    }
+
+    /* end global class */
+
+    /* start jumbotron */
+    .site-main .jumbotron {
+        background-size: cover;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+
+    .site-main .jumbotron .jm-txt {
+        z-index: 1 !important;
+        margin-top: 100px;
+        padding-left: 0;
+    }
+
+    .site-main .jumbotron h4 {
+        line-height: 1rem;
+        font-size: 17px;
+    }
+
+    .site-main .jumbotron h2 {
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 2.7rem;
+    }
+
+    .site-main .jumbotron p {
+        font-size: 15px;
+        line-height: 1.5rem;
+        /* color: black; */
+    }
+
+    .site-main .jumbotron .container .row .col-lg-6 img {
+        margin-top: -60px;
+        size: 600px;
+    }
+
+    .site-main .jumbotron .container .row .col-lg-6 button {
+        margin-top: 5%;
+        font-weight: 500;
+        border-radius: 35px;
+        padding: 3px 10px 3px 10px;
+        font-size: 14px;
+    }
+
+    /* end jumbotron */
+
+    /* start about */
+    .site-main .about {
+        background-size: cover;
+    }
+
+    .site-main .about {
+        padding-top: 10px;
+    }
+
+    .site-main .about .container .ornamen {
+        margin-top: 0;
+    }
+
+    .site-main .about .container h1 {
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .site-main .about .container .row .col-lg-5 .row .text-ds p {
+        padding-left: 20px;
+    }
+
+    .site-main .about .container .row .col-lg-6 .progres-padding {
+        margin-bottom: 3%;
+    }
+
+    /* end about */
+
+    /* start profil */
+    .site-main .profil {
+        margin-top: 10%;
+        background-size: cover;
+        background-position: 30%;
+        /* background-attachment: local; */
+        margin-bottom: 20px;
+    }
+
+    .site-main .profil .container .row img {
+        height: 280px;
+        width: 280px;
+    }
+
+    .site-main .profil .row .col-lg-6 h1 {
+        margin-bottom: 10%;
+        padding-top: 0;
+        margin-top: -5%;
+        font-size: 15px;
+    }
+
+    .site-main .profil .container .row {
+        color: var(--text-color2);
+        font-family: var(--paytone);
+        margin-bottom: 0;
+    }
+
+    /* end profil */
+
+    /* star experience */
+    .site-main .experience {
+        background-size: cover;
+
+    }
+
+    .site-main .experience .container .row img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .site-main .experience .container .row .bulatan {
+        margin-top: -14%;
+        box-shadow: var(--shadow-color);
+    }
+
+    .site-main .experience .container .owl-carousel .experience-clr {
+        padding: 10px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .site-main .experience .container .owl-carousel .experience-clr #padding-text {
+        padding-bottom: 50px;
+    }
+
+    .site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah {
+
+        margin-right: 20px;
+        margin-top: 0;
+
+    }
+
+    .site-main .experience .container .row .col-lg-6 .row .pembungkus-panah .kanan {
+
+        margin-right: 0;
+
+    }
+
+    .site-main .experience .container .row .col-lg-6 .row .pembungkus-panah {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+    @keyframes experienceAnimation {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-35px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes bulatanAnimation {
+        0% {
+            width: 70px;
+            height: 25px;
+        }
+
+        50% {
+            width: 50px;
+            height: 15px;
+        }
+
+        100% {
+            width: 70px;
+            height: 25px;
+        }
+    }
+
+    /* end experience */
+
+    /* start portfolio */
+    .site-main .portfolio .container .portfolio-btn .port-btn {
+        padding-left: 0;
+        font-size: 12px;
+        padding-left: 5px;
+        margin-top: -20%;
+    }
+
+    /* end portfolio */
+
+    /* start testimoni */
+    .site-main .testimoni .container .owl-theme .testimoni-img {
+        height: 120px;
+        width: 120px;
+        margin-top: 10%;
+    }
+
+    .site-main .testimoni .container h4 {
+        margin-top: 5%;
+    }
+
+    .site-main .testimoni .container .owl-theme .testimoni-text {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+
+    /* end testimoni */
+
+}

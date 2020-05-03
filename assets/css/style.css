@@ -1,0 +1,626 @@
+/* include fonts */
+@import url("fonts.css");
+/* css variable */
+@import url("partials/variable.css");
+/* global css */
+@import url('partials/global.css');
+
+body {
+    font: normal 15px/30px cursive;
+    background-color: #FFD36F;
+
+}
+
+
+/* Start navigation */
+header {
+    position: relative;
+    z-index: 1;
+    font-family: var(--montserrat);
+}
+
+.header-area .navbar-bg-clr {
+    background-color: #3F3658;
+
+}
+
+.header-area .container-fluid .navbar .brand-font {
+    font-weight: 700;
+}
+
+.header-area .container-fluid .navbar .brand-font .brand-color,
+.nav-color {
+    color: #F68E1B;
+}
+
+.header-area .container-fluid .navbar .nav-item {
+    padding-right: 10px;
+}
+
+.header-area .container-fluid .navbar .collapse .navbar-nav:last-child {
+    padding-right: 0px;
+}
+
+.header-area .container-fluid .navbar .nav-color:hover {
+    color: #fff;
+}
+
+.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font {
+    font-weight: 500;
+}
+
+.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.nav-active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.nav-active::after {
+    content: " ";
+    height: 3px;
+    width: 18px;
+    display: block;
+    background: #fff;
+    margin: auto;
+    border-radius: 30%;
+}
+
+/* end navigation */
+
+/* Start banner */
+.site-main .jumbotron {
+    /* height: 42.5rem; */
+
+    margin-top: -5.4rem;
+    background: url('/assets/img/banner-section/bg-jm.png') no-repeat 0% 50%;
+    background-size: contain;
+    background-position: 100%;
+    /* background-color: var(--primary-color); */
+    overflow: auto;
+    /* padding-bottom: 150px; */
+    width: 100%;
+    height: auto;
+    /* background-attachment: scroll; */
+}
+
+.site-main .jumbotron .jm-txt {
+    z-index: 1 !important;
+    margin-top: 120px;
+    padding-left: 30px;
+}
+
+.site-main .jumbotron .container .jm-txt-padding {
+
+    padding-left: 30px;
+}
+
+.site-main .jumbotron .jm-txt-clr {
+    color: var(--title-color);
+}
+
+.site-main .jumbotron h4 {
+    font-weight: bold;
+    text-shadow: var(--shadow-color);
+    line-height: 1rem;
+}
+
+.site-main .jumbotron h2 {
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: var(--shadow-color);
+    line-height: 4.3rem;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+.site-main .jumbotron p {
+    color: var(--text-color);
+    text-shadow: var(--shadow-color);
+    font-size: 16px;
+    padding-right: 35px
+}
+
+
+.site-main .jumbotron .container .row .col-lg-6 img {
+    margin-top: -80px;
+    size: 600px;
+}
+
+.site-main .jumbotron .container .row .col-lg-6 button {
+    margin-top: 5%;
+    background: var(--primary-color);
+    color: var(--text-color3);
+    font-weight: 700;
+    border-radius: 35px;
+    position: relative;
+    border: 3px solid transparent;
+    transition: background .6s ease;
+    padding: 5px 20px 5px 20px;
+    font-family: var(--montserrat);
+    margin-bottom: 25%;
+}
+
+.site-main .jumbotron .container .row .col-lg-6 button:hover {
+    background: var(--primary-color3);
+    background-clip: padding-box;
+    color: var(--primary-color);
+}
+
+.site-main .jumbotron .container .row .col-lg-6 button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 35px;
+    box-shadow: var(--shadow-color);
+}
+
+
+/* End banner */
+
+
+/* start about */
+.site-main .about {
+
+    background: url('../img/about-section/about-bg-primary.png') no-repeat 100% 100%;
+    height: auto;
+
+    background-size: contain, cover;
+    background-position: 100%;
+    overflow: auto;
+    margin-top: 40px;
+    /* background-color: var(--primary-color); */
+}
+
+.site-main .about .container h1 {
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-shadow: var(--shadow-color);
+}
+
+.site-main .about .container .ornamen {
+    position: relative;
+    margin-top: 4%
+}
+
+.site-main .about .container .ornamen .col-lg-5 button {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+
+}
+
+.site-main .about .container .ornamen .col-lg-5 button .img-raunded {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+}
+
+.site-main .about .container .ornamen .col-lg-5 button .content {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 25px;
+    margin-left: 60px;
+    width: 100%;
+}
+
+.site-main .about .container .ornamen .col-lg-5 button .content p {
+    text-align: left;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.site-main .about .container .col-lg-6 .ornamen-progress {
+    margin-top: 50px;
+}
+
+.site-main .about .container .col-lg-6 .ornamen-progress h5 {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.site-main .about .contianer .col-lg-6 .ornamen-progress .progress .progress-bar {
+    background: var(--primary-color);
+}
+
+
+/* end about */
+
+/* start profil */
+.site-main .profil {
+    background: url('../img/profil-section/profile-banner.png') no-repeat 100% 100%;
+    /* height: 45rem; */
+    height: auto;
+    margin-top: 10%;
+    background-size: 100%;
+    background-position: 100%;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.site-main .profil .row .col-lg-6 h1 {
+    margin-bottom: 5%;
+    padding-top: 2%;
+    font-size: 55px;
+}
+
+.site-main .profil .container .row img {
+    height: 480px;
+    width: 480px;
+
+}
+
+.site-main .profil .container .row {
+    color: var(--text-color2);
+    font-family: var(--paytone);
+    margin-bottom: 40px;
+}
+
+
+/* 
+.site-main .profil .container .row .col-lg-6 button {
+    margin-top: 5%;
+    background: var(--primary-color);
+    color: var(--text-color4);
+    font-weight: 700;
+    border-radius: 35px;
+    position: relative;
+    border: 3px solid transparent;
+    transition: background .6s ease;
+    padding: 5px 20px 5px 20px;
+
+}
+
+.site-main .profil .container .row .col-lg-6 button:hover {
+
+    background-clip: padding-box;
+
+    background: var(--text-color4);
+    color: var(--primary-color);
+}
+
+.site-main .profil .container .row .col-lg-6 button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 35px;
+    box-shadow: var(--shadow-color);
+}
+
+ */
+/* end profil */
+
+/* start experience */
+.site-main .experience {
+    background: url('../img/experience-section/experience-bg2.png') no-repeat 0% 50%;
+    /* height: 40rem; */
+    background-size: 100%;
+    background-position: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* .site-main .experience .container div img {
+    margin-bottom: -100px;
+} */
+.site-main .experience .container .row img {
+    position: relative;
+    z-index: 3;
+
+
+    animation-name: experienceAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: ease-in-out;
+}
+
+.site-main .experience .container .row .bulatan {
+    background-color: var(--primary-color);
+    border-radius: 100%;
+
+    z-index: 3 !important;
+    animation-name: bulatanAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: ease-in-out;
+    margin-top: -14%;
+    box-shadow: var(--shadow-color);
+}
+
+.site-main .experience .container .owl-carousel .experience-clr {
+    margin-top: 10%;
+    /* height: 350px; */
+    height: auto;
+    background: var(--gradient-color2);
+    border-radius: 35px;
+    padding: 30px;
+    line-height: 25px;
+    font-family: var(--paytone);
+}
+
+.site-main .experience .container .owl-carousel .experience-clr h4 {
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.site-main .experience .container .owl-carousel .experience-clr p {
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.site-main .experience .container .row .col-lg-6 .row .pembungkus-panah {
+    display: flex;
+    justify-content: end;
+}
+
+.site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative !important;
+    border: 3px solid transparent;
+    transition: background .6s ease;
+}
+
+.site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah:hover {
+    background-color: var(--primary-color);
+
+    color: var(--primary-color);
+}
+
+.site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah .fa-arrow-circle-left,
+.site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah .fa-arrow-circle-right {
+    font-size: 54px;
+    color: var(--primary-color);
+    background-color: var(--prmary-color3);
+    border-radius: 100%;
+    position: relative;
+}
+
+.site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah .fa-arrow-circle-left:hover,
+.site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah .fa-arrow-circle-right:hover {
+
+    color: var(--primary-color3);
+    background-color: var(--primary-color);
+
+}
+
+/* end experience */
+
+/* start portfolio */
+.site-main .portfolio {
+    padding: 4rem 0;
+}
+
+.site-main .portfolio .container .portfolio-btn {
+
+    border: 0;
+    font: normal 500 16px/130px var(--montserrat);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: -5%;
+}
+
+.site-main .portfolio .container .portfolio-btn .port-btn {
+    /* margin-right: 4rem; */
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    padding-left: 3rem;
+}
+
+.site-main .portfolio .container .grid .our-project img {
+    border-radius: 10px;
+}
+
+.site-main .portfolio .container .grid .our-project .img {
+    position: relative;
+}
+
+
+.site-main .portfolio .container .grid .our-project .bg-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.site-main .portfolio .container .grid .our-project .bg-hover:hover {
+    opacity: 1;
+}
+
+.site-main .portfolio .container .portfolio-btn .port-btn.active {
+    font-weight: 900;
+    padding-top: 0;
+}
+
+.site-main .portfolio .container .grid .our-project .title {
+    color: black;
+}
+
+/* end portfolio */
+
+/* start testimoni */
+.site-main .testimoni .container .testimoni-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.site-main .testimoni .container .testimoni-text {
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+.site-main .testimoni .container .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+
+/* end testimoni */
+
+
+/* start contact */
+.site-main .contact .container .row .col-lg-8 h5 {
+    color: var(--text-color4);
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-weight: 900;
+
+}
+
+.site-main .contact .container .row .col-lg-8 {
+    height: auto;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding-bottom: 25px;
+    margin-top: 10%;
+}
+
+.site-main .contact .container .row .ornamen {
+    margin-bottom: 20px;
+    margin-top: 27px;
+}
+
+.site-main .contact .container .row img {
+    float: left;
+    height: 40px;
+    margin-right: 12px;
+
+}
+
+.site-main .contact .container .row .ornamen .title-item {
+    font-size: 17px;
+    font-weight: 900;
+    color: var(--text-color4);
+    line-height: 15px;
+    margin: 0;
+}
+
+.site-main .contact .container .row .subtitle-item {
+    color: #f7f7f7;
+    margin: 0;
+}
+
+.site-main .contact .container .row .form-title {
+    margin: 0;
+    color: var(--text-color3);
+}
+
+.site-main .contact .container button {
+    background-color: var(--text-color4);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* end contact */
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 12rem;
+}
+
+footer .container .row .icons {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+footer .container .row .icons i {
+    font-size: 40px;
+}
+
+footer .container .row .icons:hover {
+    color: var(--text-color4);
+}
+
+
+
+footer .container .row .footer-text {
+    margin-top: 20px;
+    color: var(--text-color4);
+    font-weight: 500;
+}
+
+
+
+/* end footer */
+
+@keyframes experienceAnimation {
+    0% {
+        /* margin-top: 0; */
+        transform: translateY(0);
+    }
+
+    50% {
+        /* margin-top: -7%; */
+        transform: translateY(-35px);
+    }
+
+    100% {
+        /* margin-top: 0; */
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes bulatanAnimation {
+    0% {
+        width: 130px;
+        height: 60px;
+
+
+    }
+
+    50% {
+        width: 90px;
+        height: 40px;
+
+    }
+
+    100% {
+        width: 130px;
+        height: 60px;
+
+    }
+}
