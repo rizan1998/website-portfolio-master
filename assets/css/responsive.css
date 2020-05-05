@@ -1,5 +1,18 @@
 @media only screen and (max-width: 340px) {
 
+    /* header area */
+
+    .header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active::after {
+        content: " ";
+        height: 0;
+        width: 0;
+        display: block;
+        background: none;
+        margin: auto;
+
+    }
+
+    /* end header area */
     /* global class */
     .site-main .title-section {
         font-size: 18px;
@@ -231,8 +244,29 @@
 }
 
 /* if the viewport is equal to 340px or less than that */
-@media only screen and (max-width: 990px) {
-    /* end global class */
+@media only screen and (max-width: 792px) {
+
+    .header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active::after {
+        content: " ";
+        height: 0;
+        width: 0;
+        display: block;
+        background: none;
+        margin: auto;
+
+    }
+
+    /* header area */
+
+    .header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.nav-active::after {
+
+        height: 0;
+        width: 0;
+        display: inline-block;
+
+    }
+
+    /* end header area */
 
     /* start jumbotron */
     .site-main .jumbotron {
@@ -268,13 +302,7 @@
         padding-top: 40px;
     }
 
-    /*  */
-    .site-main .about .container .ornamen {
-        /* margin-top: 0; */
-    }
-
     .site-main .about .container h1 {
-        /* font-size: 35px; */
         font-weight: 500;
         text-align: center;
     }
@@ -298,16 +326,13 @@
         margin-bottom: 20px;
     }
 
-    .site-main .profil .container .row img {
-        height: 280px;
-        width: 280px;
-    }
+    /* .site-main .profil .container .row img {
+        height: 380px;
+        width: 380px;
+    } */
 
     .site-main .profil .row .col-lg-6 h1 {
-        margin-bottom: 10%;
         padding-top: 0;
-        margin-top: -5%;
-        font-size: 15px;
     }
 
     .site-main .profil .container .row {
@@ -324,21 +349,25 @@
 
     }
 
-    .site-main .experience .container .row img {
-        height: 250px;
-        width: 250px;
+    .site-main .experience .container .tb-m {
+        margin-bottom: -500px;
     }
 
+    /* .site-main .experience .container .row img {
+        height: 400px;
+        width: 400px;
+    } */
+    /* 
     .site-main .experience .container .row .bulatan {
-        margin-top: -14%;
+        margin-top: -10%;
         box-shadow: var(--shadow-color);
-    }
+    } */
 
-    .site-main .experience .container .owl-carousel .experience-clr {
+    /* .site-main .experience .container .owl-carousel .experience-clr {
         padding: 10px;
         line-height: 20px;
         text-align: left;
-    }
+    } */
 
     .site-main .experience .container .owl-carousel .experience-clr #padding-text {
         padding-bottom: 50px;
@@ -363,7 +392,7 @@
 
     }
 
-
+    /* 
 
     @keyframes experienceAnimation {
         0% {
@@ -381,29 +410,29 @@
 
     @keyframes bulatanAnimation {
         0% {
-            width: 70px;
-            height: 25px;
+            width: 90px;
+            height: 35px;
         }
 
         50% {
-            width: 50px;
-            height: 15px;
-        }
-
-        100% {
             width: 70px;
             height: 25px;
         }
-    }
+
+        100% {
+            width: 90px;
+            height: 35px;
+        }
+    } */
 
     /* end experience */
 
     /* start portfolio */
     .site-main .portfolio .container .portfolio-btn .port-btn {
         padding-left: 0;
-        font-size: 12px;
+        font-size: 15px;
         padding-left: 5px;
-        margin-top: -20%;
+        margin-top: -5%;
     }
 
     /* end portfolio */

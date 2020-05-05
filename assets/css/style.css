@@ -14,22 +14,32 @@ body {
 
 /* Start navigation */
 header {
-    position: relative;
-    z-index: 1;
+    /* position: fixed; */
     font-family: var(--montserrat);
+    /* top: 0;
+    right: 0;
+    left: 0; */
+
+    position: relative;
 }
+
 
 .header-area .navbar-bg-clr {
-    background-color: #3F3658;
+
+    background-image: linear-gradient(69.9deg, rgba(76, 79, 106, 1) 3.2%, rgba(118, 124, 163, 1) 97.6%);
+
+
 
 }
+
+
 
 .header-area .container-fluid .navbar .brand-font {
     font-weight: 700;
 }
 
 .header-area .container-fluid .navbar .brand-font .brand-color,
-.nav-color {
+.header-area .container-fluid .navbar-nav .nav-color {
     color: #F68E1B;
 }
 
@@ -49,12 +59,12 @@ header {
     font-weight: 500;
 }
 
-.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.nav-active {
+.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active {
     color: #ffffff;
     font-weight: 700;
 }
 
-.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.nav-active::after {
+.header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active::after {
     content: " ";
     height: 3px;
     width: 18px;
@@ -75,7 +85,7 @@ header {
     background-size: contain;
     background-position: 100%;
     /* background-color: var(--primary-color); */
-    overflow: auto;
+    overflow: visible;
     /* padding-bottom: 150px; */
     width: 100%;
     height: auto;
@@ -167,10 +177,10 @@ header {
 
     background: url('../img/about-section/about-bg-primary.png') no-repeat 100% 100%;
     height: auto;
-
+    width: 100%;
     background-size: contain, cover;
     background-position: 100%;
-    overflow: auto;
+    overflow: visible;
     margin-top: 40px;
     /* background-color: var(--primary-color); */
 }
@@ -214,6 +224,7 @@ header {
     border-radius: 25px;
     margin-left: 60px;
     width: 100%;
+    box-shadow: var(--shadow-color);
 }
 
 .site-main .about .container .ornamen .col-lg-5 button .content p {
@@ -222,18 +233,20 @@ header {
     padding-left: 20px;
 }
 
-.site-main .about .container .col-lg-6 .ornamen-progress {
+.site-main .about .container .col-lg-5 .ornamen-progress {
     margin-top: 50px;
+
 }
 
-.site-main .about .container .col-lg-6 .ornamen-progress h5 {
+.site-main .about .container .col-lg-5 .ornamen-progress .progress {
+    box-shadow: var(--shadow-color);
+}
+
+.site-main .about .container .col-lg-5 .ornamen-progress h5 {
     color: var(--primary-color);
     font-weight: 500;
 }
 
-.site-main .about .contianer .col-lg-6 .ornamen-progress .progress .progress-bar {
-    background: var(--primary-color);
-}
 
 
 /* end about */
@@ -246,7 +259,7 @@ header {
     margin-top: 10%;
     background-size: 100%;
     background-position: 100%;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 70px;
 }
 
@@ -371,7 +384,7 @@ header {
 
 .site-main .experience .container .row .col-lg-6 .row .pembungkus-panah {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .site-main .experience .container .row .col-lg-6 .row .col-lg-12 .panah {
@@ -482,11 +495,17 @@ header {
     border-radius: 100%;
     overflow: hidden;
     margin-top: 5%;
+    box-shadow: var(--shadow-color);
 }
 
 .site-main .testimoni .container .testimoni-text {
     padding-right: 10rem;
     padding-left: 10rem;
+}
+
+.site-main .testimoni .container .row h4 {
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
 
 .site-main .testimoni .container .owl-carousel .owl-dots .owl-dot.active span {
@@ -514,6 +533,7 @@ header {
     border-radius: 15px;
     padding-bottom: 25px;
     margin-top: 10%;
+    box-shadow: var(--shadow-color);
 }
 
 .site-main .contact .container .row .ornamen {
@@ -551,6 +571,7 @@ header {
     color: var(--primary-color);
     font-weight: 500;
 }
+
 
 /* end contact */
 

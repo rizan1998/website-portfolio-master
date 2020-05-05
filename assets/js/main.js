@@ -1,3 +1,11 @@
+// nav active
+
+
+$('.nav-color').on('click', function () {
+    $('.nav-color').removeClass('active');
+    $(this).addClass('active');
+});
+
 // owl carousel experience section
 $(" .experience .container .owl-carousel").owlCarousel({
     loop: true,

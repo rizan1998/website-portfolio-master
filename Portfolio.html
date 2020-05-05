@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive css file -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- aos css file -->
+    <link rel="stylesheet" href="assets/vendor/aos-master/dist/aos.css">
     <meta charset=" UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -26,7 +28,7 @@
     <header class="header-area">
         <!-- start navbar -->
         <div class="container-fluid  navbar-bg-clr pt-2 pb-1">
-            <nav class="navbar navbar-expand-lg  navbar-dark">
+            <nav class="navbar navbar-expand-lg   navbar-dark">
                 <div class="container">
                     <a class="navbar-brand brand-font" href="#"> <span class="brand-color">Murial</span>Code</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -38,13 +40,16 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="mr-auto"></div>
                         <div class="navbar-nav ">
-                            <a class="nav-item nav-link " href="#"><span
-                                    class="nav-color nav-font nav-active">Home</span>
+                            <a class="nav-item nav-link nav-color nav-font  active"
+                                href="#home-scroll"><span>Home</span>
                             </a>
-                            <a class="nav-item nav-link " href="#"><span class="nav-color nav-font">About</span></a>
-                            <a class="nav-item nav-link " href="#"><span class="nav-color nav-font">Profil</span></a>
-                            <a class="nav-item nav-link " href="#"><span class="nav-color nav-font">Portfolio</span></a>
-                            <a class="nav-item nav-link " href="#"><span class="nav-color nav-font">Contact</span></a>
+                            <a class="nav-item nav-link nav-color nav-font" href="#about-scroll"><span>About</span></a>
+                            <a class="nav-item nav-link nav-color nav-font"
+                                href="#profil-scroll"><span>Profil</span></a>
+                            <a class="nav-item nav-link nav-color nav-font"
+                                href="#portfolio-scroll"><span>Portfolio</span></a>
+                            <a class="nav-item nav-link nav-color nav-font"
+                                href="#contact-scroll"><span>Contact</span></a>
                         </div>
                     </div>
                 </div>
@@ -60,18 +65,19 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container jm-txt">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 jm-txt-padding">
+                    <div class="col-lg-6 col-md-12 jm-txt-padding" data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-linear="" data-aos-offset="" data-aos-anchor="center-bottom">
                         <h4 class="jm-txt-clr" style="font-family: cursive;"> Start coding at 2016</h4>
                         <h2 class="display-4 jm-txt-clr" style="font-family: cursive;">Muhamad Rijan <br> Alpalah</h2>
                         <p style="font-family: cursive"> Jika belum bisa bukan berarti kamu tidak bisa,
                             berkembanglah sesuai dengan porsimu karena kemampuan setiap individu berbeda-beda, berjalan
                             perlahan saja asalkan tetap konsisten.
                         </p>
-
                         <button class="btn">get started</button>
 
                     </div>
-                    <div class="col-lg-6 col-md-12  ">
+                    <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-anchor="center-bottom">
                         <img src="assets/img/banner-section/web-development.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -82,13 +88,19 @@
         <!-- start about -->
         <section class="about">
             <div class="container ">
-                <h1 class="d-flex justify-content-center">BEGINNER FULL STACK DEVELOPER</h1>
-                <h5 class=" d-flex justify-content-center title-section">-Murial Code Skill-</h5>
-                <div class="d-flex justify-content-center ">
+                <h1 class="d-flex justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000">
+                    BEGINNER FULL STACK DEVELOPER</h1>
+                <h5 class=" d-flex justify-content-center title-section" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300">-Murial Code
+                    Skill-</h5>
+                <div class="d-flex justify-content-center " data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000" data-aos-delay="500">
                     <img src="assets/img/garisbawah.png" class="img-fluid img-title" alt="">
                 </div>
                 <div class="row ornamen">
-                    <div class="col-lg-5 offset-lg-1 col-sm-1">
+                    <div class="col-lg-5  offset-lg-1 col-md-12 col-sm-12" data-aos="fade-right"
+                        data-aos-duration="1000" data-aos-delay="400">
                         <div class="row">
                             <button class="active  d-block mb-1" data-toggle="collapse" data-target="#collapse1"
                                 type="button" aria-expanded="false" aria-controls="collapse1">
@@ -148,7 +160,6 @@
 
                                 </div>
                             </button>
-
                             <div class="mb-2 collapse" id="collapse3">
                                 <p class="pl-4">Pada akhir tahun 2019 saya baru saja masuk pada bidang UI/UX design dan
                                     saya
@@ -158,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                         <div class="ornamen-progress">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -232,7 +243,8 @@
                             .
                         </p>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center" data-aos="flip-right" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1000" data-aos-delay="400">
                         <img src="assets/img/profil-section/profil-img3.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -251,9 +263,10 @@
                     <div class="col-lg-6 col-md-12 ">
                         <div class="row">
                             <div class="col-lg-1"></div>
-                            <div class="col-lg-10 text-center  experience-animation">
-                                <div style="margin-top:-15%; position:realtive; z-index:3;">
-                                    <img src="assets/img/experience-section/experience-img2.png" class="img-fluid"
+                            <div class="col-lg-10 text-center  experience-animation" data-aos="flip-left"
+                                data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="400">
+                                <!-- <div style="margin-top:-15%; position:realtive; z-index:3;"> -->
+                                <div> <img src="assets/img/experience-section/experience-img2.png" class="img-fluid"
                                         alt="">
                                 </div>
                                 <div class="d-flex justify-content-center ">
@@ -489,7 +502,7 @@
         <!-- end portfolio -->
 
         <!-- start testimoni -->
-        <section class="testimoni mb-5" style="margin-bottom: 1000px">
+        <section class="testimoni mb-5">
             <div class="container">
                 <h5 class=" d-flex justify-content-center title-section">-What people say about me-</h5>
                 <div class="d-flex justify-content-center">
@@ -659,6 +672,12 @@
 <script src="assets/vendor/isotope/isotope.min.js"></script>
 <!-- magniticpopup -->
 <script src="assets/vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+<!-- aos js file -->
+<script src="assets/vendor/aos-master/dist/aos.js"></script>
+<!-- aos init -->
+<script>
+    AOS.init();
+</script>
 <!-- javascript file -->
 <script src="assets/js/main.js"></script>
 
