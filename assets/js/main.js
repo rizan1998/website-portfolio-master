@@ -1,9 +1,19 @@
 // nav active
-
-
 $('.nav-color').on('click', function () {
     $('.nav-color').removeClass('active');
     $(this).addClass('active');
+});
+
+// auto scroll
+$('.page-scroll').on('click', function (e) {
+    var Tujuan = $(this).attr('href');
+    var elementTujuan = $(Tujuan);
+    $('html, body').animate({
+        scrollTop: elementTujuan.offset().top - 10 //agar pas dengan navbar
+    }, 2000, 'easeInOutQuint'); //1250 kecepa1an animasi per milmeter dan gaya transis1
+    e.preventDefault();
+
+    //effect lain jquery easing
 });
 
 // owl carousel experience section

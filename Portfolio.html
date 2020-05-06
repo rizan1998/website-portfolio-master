@@ -40,15 +40,18 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="mr-auto"></div>
                         <div class="navbar-nav ">
-                            <a class="nav-item nav-link nav-color nav-font  active"
+                            <a class="nav-item page-scroll nav-link nav-color nav-font  active "
                                 href="#home-scroll"><span>Home</span>
                             </a>
-                            <a class="nav-item nav-link nav-color nav-font" href="#about-scroll"><span>About</span></a>
-                            <a class="nav-item nav-link nav-color nav-font"
+                            <a class="nav-item page-scroll nav-link nav-color nav-font"
+                                href="#about-scroll"><span>About</span></a>
+                            <a class="nav-item page-scroll nav-link nav-color nav-font"
                                 href="#profil-scroll"><span>Profil</span></a>
-                            <a class="nav-item nav-link nav-color nav-font"
+                            <a class="nav-item page-scroll nav-link nav-color nav-font"
+                                href="#experience-scroll"><span>Experience</span></a>
+                            <a class="nav-item page-scroll nav-link nav-color nav-font"
                                 href="#portfolio-scroll"><span>Portfolio</span></a>
-                            <a class="nav-item nav-link nav-color nav-font"
+                            <a class="nav-item page-scroll nav-link nav-color nav-font"
                                 href="#contact-scroll"><span>Contact</span></a>
                         </div>
                     </div>
@@ -62,7 +65,7 @@
     <!-- ======================== START MAIN AREA ====================================== -->
     <main class="site-main">
         <!--  start Jumbotron -->
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid home-scroll" id="home-scroll">
             <div class="container jm-txt">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 jm-txt-padding" data-aos="fade-right" data-aos-duration="1000"
@@ -86,7 +89,7 @@
         <!-- end jumbotron -->
 
         <!-- start about -->
-        <section class="about">
+        <section class="about about-scroll" id="about-scroll">
             <div class="container ">
                 <h1 class="d-flex justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                     data-aos-duration="500">
@@ -218,7 +221,7 @@
         <!-- end about -->
 
         <!-- start profile -->
-        <section class="profil">
+        <section class="profil profil-scroll " id="profil-scroll">
             <div class="container">
                 <h5 class=" d-flex justify-content-center title-section">-Profiles-</h5>
                 <div class="d-flex justify-content-center">
@@ -253,7 +256,7 @@
         <!-- end profile -->
 
         <!-- start experience -->
-        <section class="experience">
+        <section class="experience experience-scroll" id="experience-scroll">
             <div class="container">
                 <h5 class=" d-flex justify-content-center title-section">-Experience-</h5>
                 <div class="d-flex justify-content-center" style="padding-bottom: -300px;">
@@ -264,7 +267,8 @@
                         <div class="row">
                             <div class="col-lg-1"></div>
                             <div class="col-lg-10 text-center  experience-animation" data-aos="flip-left"
-                                data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-delay="400">
+                                data-aos-anchor-placement="top-bottom" data-aos-duration="8
+                                00" data-aos-delay="400">
                                 <!-- <div style="margin-top:-15%; position:realtive; z-index:3;"> -->
                                 <div> <img src="assets/img/experience-section/experience-img2.png" class="img-fluid"
                                         alt="">
@@ -354,7 +358,7 @@
 
 
         <!-- start portfoio -->
-        <section class="portfolio">
+        <section class="portfolio portfolio-scroll" id="portfolio-scroll">
             <div class="container">
                 <h5 class=" d-flex justify-content-center title-section" data-aos="zoom-in-up" data-aos-duration="500"
                     data-aos-delay="0">-Portfolio-</h5>
@@ -508,7 +512,7 @@
         <!-- end portfolio -->
 
         <!-- start testimoni -->
-        <section class="testimoni mb-5">
+        <section class="testimoni mb-5 ">
             <div class="container">
                 <h5 class=" d-flex justify-content-center title-section" data-aos="zoom-in-up" data-aos-duration="500"
                     data-aos-delay="0">-What people say about me-</h5>
@@ -572,7 +576,7 @@
 
         </section>
 
-        <section class="contact d-flex align-items-center">
+        <section class="contact d-flex align-items-center contact-scroll" id="contact-scroll">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8 ">
@@ -674,6 +678,8 @@
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="assets/js/jquery-3.4.1.min.js"></script>
+<!-- jquery easing -->
+<script src="assets/js/jquery.easing.1.3.js"></script>
 <!-- bootstrap js file -->
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- mousehell plugin -->
@@ -692,6 +698,7 @@
 <script>
     AOS.init();
 </script>
+
 <!-- javascript file -->
 <script src="assets/js/main.js"></script>
 
