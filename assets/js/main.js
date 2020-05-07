@@ -118,3 +118,18 @@ $(" .testimoni .container .owl-carousel").owlCarousel({
         }
     }
 });
+
+// right navbar
+$(document).ready(function () {
+    $('#chk').click(function () {
+        if ($(this).is(":checked")) {
+            $(".menu").css({
+                "right": "0"
+            });
+        } else if ($(this).is(":not(:checked)")) {
+            $(".menu").css({
+                "right": "-100%"
+            });
+        }
+    });
+});

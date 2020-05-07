@@ -23,6 +23,27 @@ header {
     position: relative;
 }
 
+/* right navigation */
+/* .site-main .navigation-right {
+    position: fixed;
+    right: 2%;
+    top: 15%;
+    background: var(--primary-color);
+    height: 10px;
+    width: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.site-main .navigation-right .show-menu-btn {} */
+
+/* .site-main .navigarion-right .show-menu-btn .fa {
+    padding-right: 2px;
+    padding-left: 2px;
+    height: 10px;
+    width: 10px;
+} */
+
 
 .header-area .navbar-bg-clr {
 
