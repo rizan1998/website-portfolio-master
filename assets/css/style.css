@@ -621,6 +621,11 @@ footer .container .row .icons {
     margin-right: 25px;
 }
 
+footer .container .row a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 footer .container .row .icons i {
     font-size: 40px;
 }
