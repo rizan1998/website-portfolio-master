@@ -9,7 +9,7 @@ $('.page-scroll').on('click', function (e) {
     var Tujuan = $(this).attr('href');
     var elementTujuan = $(Tujuan);
     $('html, body').animate({
-        scrollTop: elementTujuan.offset().top - 10 //agar pas dengan navbar
+        scrollTop: elementTujuan.offset().top - 50 //agar pas dengan navbar
     }, 2000, 'easeInOutQuint'); //1250 kecepa1an animasi per milmeter dan gaya transis1
     e.preventDefault();
 

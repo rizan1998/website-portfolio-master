@@ -1,18 +1,5 @@
 @media only screen and (max-width: 340px) {
 
-    /* header area */
-
-    .header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active::after {
-        content: " ";
-        height: 0;
-        width: 0;
-        display: block;
-        background: none;
-        margin: auto;
-
-    }
-
-    /* end header area */
     /* global class */
     .site-main .title-section {
         font-size: 18px;
@@ -26,6 +13,31 @@
     }
 
     /* end global class */
+}
+
+
+@media only screen and (max-width: 540px) {
+
+    /* header area */
+
+    .header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active::after {
+        content: " ";
+        height: 0;
+        width: 0;
+        display: block;
+        background: none;
+        margin: auto;
+
+    }
+
+    .header-area .container-fluid {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    /* end header area */
+
 
     /* start jumbotron */
     .site-main .jumbotron {
@@ -75,6 +87,7 @@
     /* start about */
     .site-main .about {
         background-size: cover;
+        /* margin-bottom: 10%; */
     }
 
     .site-main .about {
@@ -242,6 +255,7 @@
     /* end testimoni */
 
 }
+
 
 /* if the viewport is equal to 340px or less than that */
 @media only screen and (max-width: 792px) {
