@@ -44,7 +44,7 @@
 
 
     /* start jumbotron */
-    .site-main .jumbotron {
+    .site-main .jm-bg-primary {
         background-size: cover;
         background-position: top center;
         background-attachment: fixed;
@@ -291,11 +291,12 @@
     /* end header area */
 
     /* start jumbotron */
-    .site-main .jumbotron {
+    .site-main .jm-bg-primary {
         background-size: cover;
         background-position: top center;
         background-attachment: fixed;
     }
+
 
     .site-main .jumbotron .jm-txt {
         z-index: 1 !important;

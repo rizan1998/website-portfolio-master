@@ -98,7 +98,7 @@ header {
 /* end navigation */
 
 /* Start banner */
-.site-main .jumbotron {
+.site-main .jm-bg-primary {
     /* height: 42.5rem; */
 
     margin-top: -5.4rem;
@@ -111,6 +111,10 @@ header {
     width: 100%;
     height: auto;
     /* background-attachment: scroll; */
+}
+
+.site-main .jm-bg-primary .jumbotron {
+    background: transparent;
 }
 
 .site-main .jumbotron .jm-txt {
