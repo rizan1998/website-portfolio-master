@@ -4,6 +4,9 @@
 
 
 @media only screen and (max-width: 700px) {
+    body {
+        font: normal 15px/30px var(--montserrat);
+    }
 
     /* header area */
 
@@ -45,12 +48,12 @@
         background-size: cover;
         background-position: top center;
         background-attachment: fixed;
-       
+
     }
 
     .site-main .jumbotron .jm-txt {
         z-index: 1 !important;
-        margin-top: 100px;
+        margin-top: 70px;
         padding-left: 0;
     }
 
@@ -260,7 +263,10 @@
 
 
 /* if the viewport is equal to 340px or less than that */
-@media only screen and (max-width: 792px) {
+@media only screen and (max-width: 992px) {
+    body {
+        font: normal 15px/30px var(--montserrat);
+    }
 
     .header-area .container-fluid .navbar .container .collapse .navbar-nav .nav-font.active::after {
         content: " ";
@@ -293,7 +299,7 @@
 
     .site-main .jumbotron .jm-txt {
         z-index: 1 !important;
-        margin-top: 150px;
+        /* margin-top: 40px; */
         padding-left: 0;
     }
 
@@ -319,7 +325,7 @@
     }
 
     .site-main .about .container h1 {
-        font-weight: 500;
+        font-weight: 900;
         text-align: center;
     }
 
@@ -328,7 +334,7 @@
     }
 
     .site-main .about .container .row .col-lg-6 .progres-padding {
-        margin-bottom: 3%;
+        margin-bottom: 10%;
     }
 
     /* end about */
@@ -349,6 +355,7 @@
 
     .site-main .profil .row .col-lg-6 h1 {
         padding-top: 0;
+        font-size: 45px;
     }
 
     .site-main .profil .container .row {
