@@ -99,15 +99,11 @@ header {
 
 /* Start banner */
 .site-main .jm-bg-primary {
-    /* height: 42.5rem; */
-
     margin-top: -5.4rem;
-    background: url('/assets/img/experience-section/experience-bg2.png') 0% 50%;
+    background: url('/assets/img/jmbanner.png') no-repeat 100% 100%;
     background-size: contain;
-    background-position: 100% 100%;
-    /* background-color: var(--primary-color); */
+    background-position: 100%;
     overflow: hidden;
-    /* padding-bottom: 150px; */
     width: 100%;
     height: auto;
     background-attachment: scroll;
